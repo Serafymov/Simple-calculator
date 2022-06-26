@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.calculator{
+			position: relative;
+			margin: 100px auto;
+			width: 400px;
+			height: 700px;
+			background-color: #000;
+			border-radius: 50px;
+		}
+		.calculator__header {
+			position: relative;
+			width: 400px;
+			height: 200px;
+		}
+		.calculator__body {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 400px;
+			height: 500px;
+		}
+		.calculator__block {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			height: 20%;
+		}
+		.calculator__btn {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			font-size: 50px;
+			text-align: center;
+			height: 85px;
+			width: 85px;
+			margin: 5px;
+			border-radius: 50%;
+			background-color: rgb(224, 222, 222);
+			cursor: pointer;
+		}
+		.btn--long {
+			color: #fff;
+			width: 185px;
+			border-radius: 90px;
+			background-color: dimgray;
+		}
+		.btn--orange {
+			color: #fff;
+			background-color: orange;
+		}
+		.btn--grey {
+			color: #fff;
+			background-color: dimgray;
+		}
+		.output {
+			margin: 0 20px 0 0;
+			position: absolute;
+			text-align: right;
+			font-size: 60px;
+			color: #fff;
+			bottom: 0;
+			right: 0;
+			display: block;
+			width: 100%;
+			height: 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="calculator">
+		<div class="calculator__header"><p class="output"></p></div>
+		<div class="calculator__body">
+			<div class="calculator__block">
+				<div id="btn" class="calculator__btn btn--white">C</div>
+				<div id="btn" class="calculator__btn btn--white">+/-</div>	
+				<div id="btn" class="calculator__btn btn--white">%</div>
+				<div id="btn" class="calculator__btn btn--orange">/</div>
+			</div>
+			<div class="calculator__block">
+				<div id="btn" class="calculator__btn btn--grey">7</div>
+				<div id="btn" class="calculator__btn btn--grey">8</div>
+				<div id="btn" class="calculator__btn btn--grey">9</div>
+				<div id="btn" class="calculator__btn btn--orange">*</div>
+			</div>
+			<div class="calculator__block">
+				<div id="btn" class="calculator__btn btn--grey">4</div>
+				<div id="btn" class="calculator__btn btn--grey">5</div>
+				<div id="btn" class="calculator__btn btn--grey">6</div>
+				<div id="btn" class="calculator__btn btn--orange">-</div>
+			</div>
+			<div class="calculator__block">
+				<div id="btn" class="calculator__btn btn--grey">1</div>
+				<div id="btn" class="calculator__btn btn--grey">2</div>
+				<div id="btn" class="calculator__btn btn--grey">3</div>
+				<div id="btn" class="calculator__btn btn--orange">+</div>
+			</div>
+			<div class="calculator__block">
+				<div id="btn" class="calculator__btn btn--long">0</div>
+				<div id="btn" class="calculator__btn btn--grey">.</div>
+				<div id="btn" class="calculator__btn btn--orange">=</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="app.js"></script>
+</body>
+</html>
